@@ -8,7 +8,7 @@
         <i class="fa fa-angle-right"></i>
       </a>
       <div class="carousel-inner">
-        <div v-for="item in carousels" :class="'item ' + item.active">
+        <div v-for="item in carousels" :key="item" :class="'item ' + item.active">
           <img :src="item.image" :alt="item.alt" class="img-responsive">
           <div class="carousel-caption">
             <h1 class="animated fadeInDown delay-1"><span>{{item.title}}</span></h1>
