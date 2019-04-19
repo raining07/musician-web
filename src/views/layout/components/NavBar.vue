@@ -20,14 +20,17 @@
             <li v-for="(item, index) in topRoutes" :key="index" @click="doCollapse">
               <router-link :to="item.path"  class="smoothScroll">{{item.title}}</router-link>
             </li>
-            <!-- 系统管理 -->
+            <!-- "我的"管理 -->
             <li class="dropdown">
               <a data-toggle="dropdown" class="dropdown-toggle js-activated" href="#">
                 头像 <span class="caret"></span>
               </a>
               <ul role="menu" class="dropdown-menu">
                 <li @click="doCollapse">
-                  <router-link to="#">密码修改</router-link>
+                  <router-link :to="this.accountRoute.path">账号</router-link>
+                </li>
+                <li @click="doCollapse">
+                  <router-link :to="this.settingsRoute.path">设置</router-link>
                 </li>
                 <li @click="doCollapse">
                   <router-link to="#">退出</router-link>
@@ -45,13 +48,17 @@
 
 <script>
     import topRoutes from '@/router/index'
+    import AccountRoute from '@/router/modules/account'
+    import SettingsRoute from '@/router/modules/settings'
 
     export default {
       name: "NavBar",
       data () {
         return {
           collapse: 'collapse',
-          topRoutes : topRoutes.options.routes
+          topRoutes: topRoutes.options.routes,
+          accountRoute: AccountRoute,
+          settingsRoute: SettingsRoute
         }
       },
       methods: {
