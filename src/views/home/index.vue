@@ -66,7 +66,7 @@ export default {
   methods: {
     // 播放
     play() {
-      this.timer = setInterval(this._next, 3000)
+      this.timer = setInterval(this.baseNext, 5000)
     },
     // 停止播放
     stop() {
@@ -78,25 +78,25 @@ export default {
       this.play()
     },
     // 往前翻一个
-    _prev() {
+    basePrev() {
       this.carousels[this.loopIndex].active = ''
       this.loopIndex = this.loopIndex == 0 ? this.carousels.length - 1 : this.loopIndex - 1
       this.carousels[this.loopIndex].active = 'active'
     },
     // 往后翻一个
-    _next() {
+    baseNext() {
       this.carousels[this.loopIndex].active = ''
       this.loopIndex = this.loopIndex == this.carousels.length - 1 ? 0 : this.loopIndex + 1
       this.carousels[this.loopIndex].active = 'active'
     },
     // 往前翻一个,并重启播放
     goPrev() {
-      this._prev()
+      this.basePrev()
       this.restart()
     },
     // 往后翻一个,并重启播放
     goNext() {
-      this._next()
+      this.baseNext()
       this.restart()
     }
   },
