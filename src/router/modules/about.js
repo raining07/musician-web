@@ -1,10 +1,10 @@
-import Layout from '@/views/layout/Layout'
+import index from '@/views/about'
 
-const AboutRoute = {
+const HomeRoute = {
   path: '/about',
-  component: Layout,
+  component: index,
   name: 'About',
   title: '关于我们'
 }
 
-export default AboutRoute
+export default HomeRoute
