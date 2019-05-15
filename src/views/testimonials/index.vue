@@ -19,7 +19,7 @@
               <div class="item active">
                 <div class="row">
                   <div class="col-xs-12 col-md-3 text-center testimonial-image">
-                    <img class="img-circle" alt="..." src="images/testimonial/client01.jpg">
+                    <img class="img-circle" alt="..." src="/static/images/testimonial/client01.jpg">
                   </div>
                   <div class="col-xs-12 col-md-9 testimonial-text">
                     <p
@@ -36,7 +36,11 @@
               <div class="item">
                 <div class="row">
                   <div class="col-xs-12 col-md-3 text-center testimonial-image">
-                    <img class="img-circle" alt="Avatar" src="images/testimonial/client02.jpg">
+                    <img
+                      class="img-circle"
+                      alt="Avatar"
+                      src="/static/images/testimonial/client02.jpg"
+                    >
                   </div>
                   <div class="col-xs-12 col-md-9 testimonial-text">
                     <p class="subtext">
@@ -54,7 +58,11 @@
               <div class="item">
                 <div class="row">
                   <div class="col-xs-12 col-md-3 text-center testimonial-image">
-                    <img class="img-circle" alt="Avatar" src="images/testimonial/client03.jpg">
+                    <img
+                      class="img-circle"
+                      alt="Avatar"
+                      src="/static/images/testimonial/client03.jpg"
+                    >
                   </div>
                   <div class="col-xs-12 col-md-9 testimonial-text">
                     <p
@@ -96,28 +104,28 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-1.png">
+            <img alt="clients" src="/static/images/clients/logo-1.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-2.png">
+            <img alt="clients" src="/static/images/clients/logo-2.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-3.png">
+            <img alt="clients" src="/static/images/clients/logo-3.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-4.png">
+            <img alt="clients" src="/static/images/clients/logo-4.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-5.png">
+            <img alt="clients" src="/static/images/clients/logo-5.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-6.png">
+            <img alt="clients" src="/static/images/clients/logo-6.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-7.png">
+            <img alt="clients" src="/static/images/clients/logo-7.png">
           </div>
           <div class="col-xs-6 col-sm-3 col-md-3 client">
-            <img alt="clients" src="images/clients/logo-8.png">
+            <img alt="clients" src="/static/images/clients/logo-8.png">
           </div>
         </div>
       </div>
